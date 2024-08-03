@@ -10,7 +10,7 @@ function TodoList() {
         }
         const newTodos = [todo, ...todos];
         setTodos(newTodos);
-        console.log(todo, ...todos)
+       
     }
   return (
     <div>
@@ -18,6 +18,7 @@ function TodoList() {
             How would you like to spend your day today?
         </h1>
         <TodoForm onSubmit={addTodo}/>
+        <Todo/>
     </div>
   )
 }
